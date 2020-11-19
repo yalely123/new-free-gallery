@@ -1,0 +1,41 @@
+nav a {
+  background-color: gray;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin:20px;
+  border: 3px solid black;
+  border-radius: 0px; 
+  font-size: 35px;
+}
+.card-body{
+  background-color: gray;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  margin:20px;
+  border: 3px solid black;
+  border-radius: 0px; 
+  font-size: 35px;
+}
+.text-center{
+  background-color: white;
+  border: 3px solid black;
+  margin:20px;
+}
+.form-row a{
+  font-size: 35px;
+  color: black;
+  text-decoration: none;
+}
+.form-row a:hover{
+  color: purple;
+  text-decoration: underline;
+}
+.text-danger{
+  color:red;
+  font-size: 20px;
+}
+

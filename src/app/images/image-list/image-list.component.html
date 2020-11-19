@@ -1,0 +1,48 @@
+<!-- <table *ngIf="imageList">
+  <tr *ngFor="let i of rowIndexArray">
+    <td>
+      <div class="imagebox" *ngIf="i==0">
+        <a routerLink="/image/upload">
+          <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-camera-512.png" width="400px" height="400px" class="img-fluid" >
+          <span class="imagebox-desc">Insert New Image</span></a>
+      </div>
+      <div class="imagebox" *ngIf="i!=0">
+        <div><button >X</button></div>
+        
+        
+        <img [src]="imageList[3*i-1].imageUrl" width="400px" height="400px"class="img-fluid">
+        
+        <span class="imagebox-desc">{{imageList[3*i-1].caption}}</span>
+      </div>
+    </td>
+    <td *ngIf="imageList[3*i]">
+      <div class="imagebox">
+        <div><button >X</button></div>
+        
+        <img [src]="imageList[3*i].imageUrl" width="400px" height="400px"class="img-fluid">
+        
+        <span class="imagebox-desc">{{imageList[3*i].caption}}</span>
+      </div>
+    </td>
+    <td *ngIf="imageList[3*i+1]">
+      <div class="imagebox">
+        <div><button >X</button></div>
+        
+        <img [src]="imageList[3*i+1].imageUrl" width="400px" height="400px"class="img-fluid">
+        
+        <span class="imagebox-desc">{{imageList[3*i+1].caption}}</span>
+      </div>
+    </td>
+  </tr>
+</table> -->
+<table>
+  <tr *ngFor="let item of imageList">
+    <td>
+      
+      <img [src]="item.imageUrl" width="400px" height="400px"class="img-fluid"/>
+      <span class="imagebox-desc">{{item.caption}}</span>
+
+       <div><button (click)="del($event, item)">X</button></div>
+    </td>
+  </tr>
+</table>
